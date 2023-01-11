@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script>
+            function message()
+            {
+                alert("Hi ! I am a Predefined function's outcome..");
+            }
+            var result=new Function("num1","num2","return Math.pow(num1,num2)");
+            document.writeln("<br>"+result(2,3)+"<br>");
+        </script>
+    </head>
+    <body>
+        <input type=button onclick="message()" value="Message to User"/>
+    </body>
+</html>

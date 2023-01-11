@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+           const emp =(function(){ // Data Encapsulation/Hiding
+               let name="noName";
+               return{
+                  
+                   getName:_=> name, // Arrow Functions 
+                   setName:newName => name=newName // Data abstraction
+               };
+           }) ();
+
+           console.log(emp.getName("xyzqwerty"));
+           console/log(emp.name);
+           emp.setName("SimpliLearn");
+           console.log(emp.getName());
+  
+        </script>
+    </head>
+</html>

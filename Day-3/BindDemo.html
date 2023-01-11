@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <Script>
+            const author = {
+                firstName:"James",
+                lastName:"Smith",
+                printName:function(arr){
+                    console.log(this.firstName+"   "+this.lastName);
+                    console.log(arr);
+                },
+               printReverseName :()=> {return this.firstName+"   "+this.lastName}
+             } 
+            const getFullName=author.printName.apply(author,["abc","xyz"]);
+                 const ref=author.printReverseName();
+                 console.log(ref);
+           // getFullName(); // this will not refere to window object
+        </Script>
+    </head>
+</html>   

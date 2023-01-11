@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            const map1=new Map();
+            map1.set(1,"Rahul");
+            map1.set(35,"Neel");
+            map1.set(28,"Gargesh");
+            map1.set(51,"Uttam");
+           // document.writeln(map1);
+
+           var mapArr=map1.entries();
+          //  document.writeln(mapArr+"<br>");
+
+            for(var i=0;i<map1.size;i++)
+             document.writeln(mapArr.next().value+"<br/><br/>");
+          
+
+             function getElements(value,key,map)
+             {
+                 console.log(key =value);
+             }
+
+             map1.forEach(getElements)
+        </script>
+    </head>
+</html>

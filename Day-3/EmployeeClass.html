@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            class Employee{
+                constructor(id, name, salary)
+                {
+                    this.id=id;
+                    this.name=name;
+                    this.salary=salary;
+                }
+                getEmpDetails()
+                {
+                    return "Employee id :"+this.id+"<br>Name: "+this.name+"<br>with Salary: "+this.salary;
+                }
+            }
+
+            let uttam=new Employee(129,"Uttam Patel",45000);
+            document.writeln(uttam.getEmpDetails());
+        </script>
+    </head>
+</html>

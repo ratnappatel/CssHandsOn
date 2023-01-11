@@ -1,0 +1,13 @@
+<h3>ngStyle Directive Demo</h3>
+<ul *ngFor='let emp of employees'>
+    <!-- <li [ngStyle]="{'color':getColor(emp.country)}">
+        {{emp.name}} {{emp.country}}
+
+    </li> -->
+    <li [ngClass]="{'text-success': emp.country === 'UK',
+                    'text-primary': emp.country === 'USA',
+                    'text-danger':emp.country === 'Afghanistan'
+}">
+        {{emp.name}} {{emp.country}}
+    </li>
+</ul>
